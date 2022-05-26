@@ -1,0 +1,35 @@
+<!doctypehtml>
+<html lang=en-us>
+
+<head>
+    <meta charset=utf-8>
+    <meta content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <title>Emscripten-Generated Code</title>
+    <style>
+	input{
+		width:100% 
+	}
+	button{
+		width:100%
+	}
+</style>
+</head>
+
+<body>
+    <div id=main-container>
+        <form id=form>
+            <label>d<input id=curve-d name=curve-d></label>
+            <h1>Calculation results</h1><br>
+            <label>Time (seconds)<input id=curve-time name=curve-time disabled></label><br>
+            <label>Qx<input id=curve-qx name=curve-qx disabled></label><br>
+            <label>Qy<input id=curve-qy name=curve-qy disabled></label><br>
+            <button id=btn-start-calc type=button>Start calculation</button><br>
+            <button id=btn-paste-from-stb type=button>Paste value from standart</button>
+        </form>
+    </div>
+
+    <script src=custom_script.js></script>
+    <script src=EC.js async></script>
+</body>
+
+</html>
